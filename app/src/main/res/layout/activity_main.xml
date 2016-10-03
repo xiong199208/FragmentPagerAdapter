@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:heima="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itheima.lazyviewpager.MainActivity">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    <org.itheima.tabindicator.library.TabIndicator
+        android:layout_alignTop="@id/viewpager"
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        heima:tiTabMode="triangle"
+        heima:tiTriangleWidth="15dp"
+        heima:tiTriangleHeight="10dp"
+        heima:tiTriangleColor="#ff0000"
+        heima:tiTriangleStyle="stroke"
+        heima:tiTriangleStrokeWidth="2dp"
+        >
+
+    </org.itheima.tabindicator.library.TabIndicator>
+
+
+
+</RelativeLayout>
